@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#">
+                <img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's_New</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+        </header>
+        <div class="Content">
+            <div class="textbox">
+                <h2>It's not just coffee <br> It's <span>Starbucks</span></h2>
+                <p>Welcome to Starbucks, where every cup tells a story. 
+                   Whether you're craving a perfectly brewed coffee, or a delicious pastry, we craft each experience with care. Our commitment to quality and community ensures that every visit is more than just a coffee break—it's a moment to savor.
+                   Explore our menu, find your nearest store, and join us in celebrating the art of coffee.</p>
+                   <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="Starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/starbucksindia/"><img src="facebook.png"></li></a>
+            <li><a href="https://x.com/starbucksindia?lang=en"><img src="twitter.png"></li></a>
+            <li><a href="https://www.instagram.com/starbucksindia/?hl=en"><img src="instagram.png"></li></a>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything)
+        {
+           document.querySelector('.Starbucks').src= anything;
+        }
+        function changeCircleColor(color)
+        {
+            const circle = document.querySelector('.circle');
+            circle.style.backgroung =color;
+        }
+    </script>
+    
+</body>
+</html>
